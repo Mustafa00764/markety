@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #000000;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #5a555500;}
+* {
+  box-sizing: border-box;
+}
+.swiper:hover>.swiper-button-next{
+  opacity: 1;
+  transition: all .3s;
+}
+
+.shadow-2xl{
+  box-shadow: 0 25px 50px -12px rgb(0, 0, 0);
+}
+
+.swiper:hover .swiper-pagination{
+  opacity: 1;
+  transition: all .3s;
+}
+
+.swiper-pagination{
+  opacity: 0;
+  transition: all .3s; 
+  z-index: 999;
+}
+
+.swiper:hover .swiper-button-prev{
+  opacity: 1;
+  transition: all .3s;
+}
+
+.swiper-pagination-bullet{
+  background-color: rgb(36, 35, 35);
+  width: 5px;
+  height: 5px;
+}
+
+.swiper-pagination{
+  width: 50px !important;
+  height: 5px;
+  overflow: hidden;
+  transform: translateX(120%) !important;
+}
+
+.swiper-button-next{
+  width: 50.5px;
+  height: 50.5px;
+  border-radius: 50%;
+  letter-spacing: 0;
+  background-color: rgba(232, 232, 232, .5); 
+  background-image: url("/public/arrow_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 28px;
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+.swiper-button-next::after{
+  content: none;
+}
+
+.swiper-button-prev{
+  width: 50.5px;
+  height: 50.5px;
+  border-radius: 50%;
+  letter-spacing: 0;
+  background-color: rgba(232, 232, 232, .5); 
+  background-image: url("/public/arrow_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 28px;
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+.swiper-button-prev::after{
+  content: none;
+}
+
+.din_swiper:hover>.swiper-button-next{
+  opacity: 0;
+}
+.din_swiper:hover .swiper-button-prev{
+  opacity: 0;
+  transition: all .0s;
+}
+
+.btt>button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btt>button>span{
+  height: 13px !important;
+}
+.on {
+  color: #ffd900;
+}
+.off {
+  color: #ffd90073;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+.reds>p:hover{
+  color: red;
+  cursor: pointer;
+}
